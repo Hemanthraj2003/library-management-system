@@ -1,0 +1,27 @@
+/* scroll.css */
+
+/* For Chrome, Safari, and Edge */
+::-webkit-scrollbar {
+    width: 5px; /* Width of the scrollbar */
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #6c6c6c; /* Background of the scrollbar track */
+    border-radius: 100px; /* Round edges for track */
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #888; /* Color of the draggable part of the scrollbar */
+    border-radius: 10px; /* Round edges for thumb */
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #ababab; /* Color of the draggable part when hovered */
+  }
+  
+  /* For Firefox */
+  .scrollable {
+    scrollbar-width: thin; /* Makes scrollbar thinner */
+    scrollbar-color: #888 #f1f1f1; /* Thumb color and track color */
+  }
+  

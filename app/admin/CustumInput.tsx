@@ -5,12 +5,14 @@ interface InputProps {
   inputName: string;
   isDisabled: boolean;
   setValue: (value: string) => void;
+  value: string;
 }
 
 const CustumInput: React.FC<InputProps> = ({
   inputName,
   isDisabled,
   setValue,
+  value,
 }) => {
   const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
     setValue(e.target.value);
@@ -21,6 +23,7 @@ const CustumInput: React.FC<InputProps> = ({
         type="text"
         className="w-full p-2 bg-transparent border border-gray-300 rounded-md text-white/80 peer z-50"
         placeholder=" "
+        value={value}
         disabled={isDisabled}
         onChange={handleChange}
       />
